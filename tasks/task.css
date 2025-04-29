@@ -34,13 +34,52 @@ body {
     color: var(--dark-color);
 }
 
+.answer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-label {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    color: var(--secondary-color);
+}
+
 .answer-input {
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
+    padding: 8px 12px;
     border: 2px solid var(--light-color);
     border-radius: 8px;
     font-size: 16px;
+    min-height: 40px;
+}
+
+.symbol-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.symbol-btn {
+    background: var(--light-color);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.symbol-btn:hover {
+    background: var(--accent-color);
 }
 
 .check-button {
@@ -97,4 +136,10 @@ body {
     color: var(--primary-color);
     text-align: center;
     margin-bottom: 30px;
+}
+
+@media (max-width: 600px) {
+    .answer-grid {
+        grid-template-columns: 1fr;
+    }
 }
