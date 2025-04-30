@@ -30,7 +30,7 @@ const questions = {
         {
             question: "SO₃²⁻ + HОН ⇄ ? + ? | pH ?",
             answer: "SO₃²⁻ + HОН ⇄ HSO₃⁻ + OH⁻ | pH>7",
-            parts: ["HSO3-", "OH3-", ">7"]
+            parts: ["HSO3-", "OH-", ">7"]
         },
         {
             question: "S²⁻ + HОН ⇄ ? + ? | pH ?",
