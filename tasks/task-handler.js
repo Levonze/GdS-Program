@@ -125,15 +125,15 @@ function updateQuestion() {
         <div class="question-text">${questionObj.question}</div>
         <div class="answer-grid">
             <div class="input-group">
-                <div class="input-label">Продукт 1</div>
+                <div class="input-label">1</div>
                 <input type="text" class="answer-input" data-part="0" placeholder="Введите продукт">
             </div>
             <div class="input-group">
-                <div class="input-label">Продукт 2</div>
+                <div class="input-label">2</div>
                 <input type="text" class="answer-input" data-part="1" placeholder="Введите продукт">
             </div>
             <div class="input-group">
-                <div class="input-label">pH</div>
+                <div class="input-label">3</div>
                 <input type="text" class="answer-input" data-part="2" placeholder="pH значение">
             </div>
         </div>
