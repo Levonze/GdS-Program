@@ -126,15 +126,15 @@ function updateQuestion() {
         <div class="answer-grid">
             <div class="input-group">
                 <div class="input-label">1</div>
-                <input type="text" class="answer-input" data-part="0" placeholder="Введите продукт">
+                <input type="text" class="answer-input" data-part="0" placeholder="">
             </div>
             <div class="input-group">
                 <div class="input-label">2</div>
-                <input type="text" class="answer-input" data-part="1" placeholder="Введите продукт">
+                <input type="text" class="answer-input" data-part="1" placeholder="">
             </div>
             <div class="input-group">
                 <div class="input-label">3</div>
-                <input type="text" class="answer-input" data-part="2" placeholder="pH значение">
+                <input type="text" class="answer-input" data-part="2" placeholder="">
             </div>
         </div>
         <!--<div class="symbol-buttons">
