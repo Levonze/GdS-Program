@@ -102,6 +102,12 @@ h3 {
     overflow-x: auto;
 }
 
+.chemical-title {
+    font-weight: bold;
+    color: var(--accent-color);
+    margin-bottom: 5px;
+}
+
 .reaction {
     display: flex;
     align-items: center;
