@@ -44,6 +44,7 @@ body {
 .input-group {
     display: flex;
     flex-direction: column;
+    margin-right: 50px;
 }
 
 .input-label {
@@ -111,6 +112,15 @@ body {
 .incorrect {
     background: #ffebee;
     border: 2px solid #f44336;
+}
+
+.warning {
+    background: #fff;
+    border: 2px solid #f4ee36;
+    margin-bottom: 15px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
 }
 
 .navigation {

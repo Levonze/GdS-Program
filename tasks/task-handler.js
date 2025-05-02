@@ -148,7 +148,7 @@ function updateQuestion() {
             <button type="button" class="symbol-btn" onclick="insertSymbol('=')">=</button>
         </div>-->
         <button class="check-button" onclick="checkAnswer()">Проверить</button>
-        <div class="result-message"></div>
+        <div class="result-message"></div><br><br>
     `;
     
     // Обновляем URL
@@ -187,10 +187,12 @@ function checkAnswer() {
     }
     
     if (allCorrect) {
-        resultDiv.textContent = "✅ Верно! Правильный ответ: " + questions[currentTask][currentQuestion].answer;
+        resultDiv.textContent = "✅ Верно! Полный ответ: " + questions[currentTask][currentQuestion].answer;
         resultDiv.className = "result-message correct";
     } else {
-        resultDiv.textContent = "❌ Неверно. Правильный ответ: " + questions[currentTask][currentQuestion].answer;
+        resultDiv.innerHTML = `
+        ❌ Неверно.<br><br>
+        Если ответ засчитывается как неверный хотя решение верное, попробуйте поменять местами ответ из поля <b>1</b> с ответом из поля <b>2</b>`;
         resultDiv.className = "result-message incorrect";
     }
     resultDiv.style.display = 'block';
