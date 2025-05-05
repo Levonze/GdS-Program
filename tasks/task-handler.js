@@ -105,6 +105,11 @@ const questions = {
             question: "CuCl₂ pH? Ba(HS)₂ pH? CH₃COONa pH?",
             answer: "CuCl₂ pH<7, Ba(HS)₂ pH>7, CH₃COONa pH>7",
             parts: ["<7", ">7", ">7"]
+        },
+        {
+            question: "Ca(HCO<sub>3</sub>)<sub>2</sub> pH? KI pH? Na<sub>2</sub>S pH?",
+            answer: "Ca(HCO<sub>3</sub>)<sub>2</sub> pH>7 KI pH=7 Na<sub>2</sub>S pH>7",
+            parts: [">7", "=7", ">7"]
         }
     ]
 };
@@ -187,12 +192,12 @@ function checkAnswer() {
     }
     
     if (allCorrect) {
-        resultDiv.textContent = "✅ Верно! Полный ответ: " + questions[currentTask][currentQuestion].answer;
+        resultDiv.innerHTML = "✅ Верно! Полный ответ: " + questions[currentTask][currentQuestion].answer;
         resultDiv.className = "result-message correct";
     } else {
         resultDiv.innerHTML = `
         ❌ Неверно.<br><br>
-        Если ответ засчитывается как неверный хотя решение верное, попробуйте поменять местами ответ из поля <b>1</b> с ответом из поля <b>2</b>`;
+        Если ответ засчитывается как неверный, хотя решение верное, попробуйте поменять местами ответ из поля <b>1</b> с ответом из поля <b>2</b>`;
         resultDiv.className = "result-message incorrect";
     }
     resultDiv.style.display = 'block';
