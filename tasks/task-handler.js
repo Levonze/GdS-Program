@@ -107,8 +107,8 @@ const questions = {
             parts: ["<7", ">7", ">7"]
         },
         {
-            question: "Ca(HCO<sub>3</sub>)<sub>2</sub> pH? KI pH? Na<sub>2</sub>S pH?",
-            answer: "Ca(HCO<sub>3</sub>)<sub>2</sub> pH>7 KI pH=7 Na<sub>2</sub>S pH>7",
+            question: "Ca(HCO₃)₂ pH? KI pH? Na₂S pH?",
+            answer: "Ca(HCO₃)₂ pH>7 KI pH=7 Na₂S pH>7",
             parts: [">7", "=7", ">7"]
         },
         {
