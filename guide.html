@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+    <title>Гидролиз солей → Инструкция по выполнению</title>
+    <link href="tasks/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><span class="water-effect">Инструкция</span></h1>
+            <div class="subtitle">О том как пользоваться программой</div>
+            <div class="nav-links2">
+                <a href="/">Назад к теории</a>
+            </div>
+        </div>
+    </header>
+    <div class="content-tasks">
+        <main class="main-content">
+            <h2>Как вводить ответы?</h2>
+            <p>У вас будет 3 поля для ввода ответа и также дана формула.<br>Например <span class="code">Fe²⁺ + HОН ⇄ ? + ? | pH ?</span>. В этой формуле 3 знака вопроса (?) и ответы нужно вводить соответственно. Ответ из первого поля встанет на место первого вопроса, остальное также.</p>
+            <h3>Fe²⁺ + HОН ⇄ ?[Поле 1] + ?[Поле 2] | pH ?[Поле 3]</h3>
+            <div class="answer-grid">
+                <div class="input-group">
+                    <div class="input-label">1</div>
+                    <input disabled type="text" class="answer-input" data-part="0" placeholder="FeOH+">
+                </div>
+                <div class="input-group">
+                    <div class="input-label">2</div>
+                    <input disabled type="text" class="answer-input" data-part="1" placeholder="H+">
+                </div>
+                <div class="input-group">
+                    <div class="input-label">3</div>
+                    <input disabled type="text" class="answer-input" data-part="2" placeholder="<7">
+                </div>
+            </div>
+            И тогда ответ будет: <span class="code">Fe²⁺ + HОН ⇄ FeOH⁺ + H⁺ | pH˂7</span>
+            <br><br>
+            <h2>Специальные символы</h2>
+            <p>Вы наверняка видели в формулах верхние и нижние индексы (<sub>2</sub> и <sup>2</sup>).<br>
+            Вы <b>не сможете</b> их написать и программа не засчитает вам ответ.<br><br>
+            Вместо этого пишите все слитно обычными символами<br>
+            H<sup>+</sup> = H+<br>
+            H<sub>2</sub>SO<sub>4</sub> = H2SO4<br>
+            Cu(OH)<sub>2</sub> = Cu(OH)2<br></p>
+            <p>Также в ответе может быть задействован знак "≈", его вы можете скопировать из панели снизу.<br>
+            При записи ответа в pH допускаются следующие ответы:
+            <code><7 >7 =7 ≈7</code></p>
+            <h2>Перемена мест слогаемых</h2>
+            <p>Иногда есть возможность поменять два слогаемых местами и хоть от перемены мест слогаемых сумма не меняется, здесь важен порядок ответов.<br>
+            Пример:
+            <div class="example-wrong">
+                <h3 class="example-wrong-title">Не засчитает</h3>
+                <div class="answer-grid">
+                    <div class="input-group">
+                        <div class="input-label">1</div>
+                        <input disabled type="text" class="answer-input" data-part="0" placeholder="NH4OH">
+                    </div>
+                    <div class="input-group">
+                        <div class="input-label">2</div>
+                        <input disabled type="text" class="answer-input" data-part="1" placeholder="CH3COOH">
+                    </div>
+                    <div class="input-group">
+                        <div class="input-label">3</div>
+                        <input disabled type="text" class="answer-input" data-part="2" placeholder="≈7">
+                    </div>
+                </div>
+            </div>
+            <div class="example-right">
+                <h3 class="example-right-title">Засчитает</h3>
+                <div class="answer-grid">
+                    <div class="input-group">
+                        <div class="input-label">1</div>
+                        <input disabled type="text" class="answer-input" data-part="0" placeholder="CH3COOH">
+                    </div>
+                    <div class="input-group">
+                        <div class="input-label">2</div>
+                        <input disabled type="text" class="answer-input" data-part="1" placeholder="NH4OH">
+                    </div>
+                    <div class="input-group">
+                        <div class="input-label">3</div>
+                        <input disabled type="text" class="answer-input" data-part="2" placeholder="≈7">
+                    </div>
+                </div>
+            </div>
+            </p>
+                <div class="nav-links2">
+                    <a href="/">Назад к теории</a>
+                </div>
+        </main>
+    </div>
+</body>

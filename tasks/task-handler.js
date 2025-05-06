@@ -107,13 +107,13 @@ const questions = {
             parts: ["<7", ">7", ">7"]
         },
         {
-            question: "Ca(HCO₃)₂ pH? KI pH? Na₂S pH?",
-            answer: "Ca(HCO₃)₂ pH>7 KI pH=7 Na₂S pH>7",
+            question: "Ca(HCO₃)₂ pH?, KI pH?, Na₂S pH?",
+            answer: "Ca(HCO₃)₂ pH>7, KI pH=7, Na₂S pH>7",
             parts: [">7", "=7", ">7"]
         },
         {
-            question: "NaCl pH?  CdSO₄ pH?  NiCl₂ pH?",
-            answer: "NaClpH=7 CdSO₄ pH<7 NiCl₂ pH<7",
+            question: "NaCl pH?, CdSO₄ pH?, NiCl₂ pH?",
+            answer: "NaCl pH=7, CdSO₄ pH<7, NiCl₂ pH<7",
             parts: ["=7", "<7", "<7"]
         }
     ]
@@ -221,6 +221,10 @@ document.getElementById('next-btn').addEventListener('click', () => {
         currentQuestion++;
         updateQuestion();
     }
+});
+
+document.getElementById('tasks-btn').addEventListener('click', () => {
+    window.open('/tasklist.html', '_self')
 });
 
 // Инициализация

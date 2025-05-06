@@ -138,6 +138,19 @@ body {
     transition: opacity 0.3s;
 }
 
+.nav-button-no {
+    background: var();
+    color: white;
+    padding: 8px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.nav-text{
+    font-size: 1.5rem;
+}
+
 .nav-button:hover {
     opacity: 0.8;
 }
