@@ -112,8 +112,8 @@ const questions = {
             parts: [">7", "=7", ">7"]
         },
         {
-            question: "NaCl pH?  CdSO<sub>4</sub> pH?  NiCl<sub>2</sub> pH?",
-            answer: "NaClpH=7 CdSO<sub>4</sub>pH<7 NiCl<sub>2</sub>pH<7",
+            question: "NaCl pH?  CdSO₄ pH?  NiCl₂ pH?",
+            answer: "NaClpH=7 CdSO₄ pH<7 NiCl₂ pH<7",
             parts: ["=7", "<7", "<7"]
         }
     ]
