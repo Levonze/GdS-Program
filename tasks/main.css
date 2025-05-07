@@ -141,7 +141,7 @@ h3 {
     margin: 20px 0;
     border-left: 4px solid var(--accent-color);
     overflow-x: auto;
-    background-image: url('images/formula.svg');
+    background-image: url('/GdS-Program/images/formula.svg');
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 10rem;
@@ -180,7 +180,7 @@ h3 {
     border-radius: 8px;
     margin: 15px 0;
     border-left: 3px solid var(--secondary-color);
-    background-image: url('images/example.svg');
+    background-image: url('/GdS-Program/images/example.svg');
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 10rem;
