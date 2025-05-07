@@ -224,7 +224,7 @@ document.getElementById('next-btn').addEventListener('click', () => {
 });
 
 document.getElementById('tasks-btn').addEventListener('click', () => {
-    window.open('tasklist.html', '_self')
+    window.open('/tasklist.html', '_self')
 });
 
 // Инициализация
